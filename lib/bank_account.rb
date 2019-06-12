@@ -17,4 +17,9 @@ class BankAccount
   def display_balance
     @balance
   end
+  
+  def valid?
+    true if @balance > 0 || @status = "open"
+  end
+  
 end
